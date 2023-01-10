@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8ede3;
+}
+
+.app {
+  width: 100vw;
+  height: 70vh; /* vw and vh stand for viewport width and viewport height respectively. */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  width: 430px;
+  height: 430px;
+  background-color: #dfd3c3;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  flex: 33%; /* each row occupies 33% of the whole board so that each row acquires equal space */
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  flex: 33%;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 293%;
+  justify-content: center;
+  font-family: "Rowdies", cursive;
+}
+.square:active {
+  background-color: #d7e9b9;
+}
+
+.header {
+  text-align: center;
+  font-family: "Rowdies", cursive;
+  font-size: 158%;
+}
+
+.footer{
+  text-align: center;
+  font-size: 70%;
+  font-family: 'Roboto', sans-serif;;
+}
